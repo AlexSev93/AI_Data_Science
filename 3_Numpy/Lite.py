@@ -1,8 +1,10 @@
 import numpy as np
 
-my_array = np.loadtxt('train_vector_1.csv')
-
 # z1
+# my_array = np.loadtxt('train_vector_1.csv')
+# print(type(my_array))
+
+# z2
 # def mean(array):
 #     s = 0
 #     for i in array:
@@ -13,6 +15,23 @@ my_array = np.loadtxt('train_vector_1.csv')
 # print(mean(my_array))
 # print(mean(list(my_array)))
 
-# my_array_2 = np.loadtxt('iris.csv')
-#
-# print(type(my_array_2))
+# z3
+# my_array2 = np.loadtxt('iris.csv', delimiter=',')
+# for i in range(my_array2.shape[1]):
+#     print(sum(my_array2[:,i]))
+
+
+# 4
+# my_array3 = np.random.randint(11, 40, (3, 3))
+# print(my_array3)
+# print(my_array3[my_array3 < 20])
+# print(my_array3.sum())
+
+# 5
+a = ('aaa', 23, 4.4)
+b = ('bbb', 15, 5.7)
+c = ('ccc', 34, 11.3)
+dt = np.dtype([('name', 'S10'), ('age', int), ('mean', float)])
+my_array5 = np.array([a, b, c], dtype=dt)
+print(my_array5)
+print(np.sort(my_array5, order='age'))
