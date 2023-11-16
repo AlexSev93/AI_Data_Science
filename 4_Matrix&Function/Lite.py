@@ -5,10 +5,14 @@ a1 = np.random.randint(-5, 5, (2, 2))
 a2 = np.random.randint(-5, 5, (2, 2))
 a3 = np.random.randint(-5, 5, (2, 2))
 
-answer = np.zeros((2, 2))
-for i in range(a1.shape[1]):
-    for j in range(a2.shape[0]):
-        answer[i, j] = np.sum(a1[i] * a2[:, j])
+
+def my_dot(a, b):
+    answer = np.zeros((2, 2))
+    for i in range(a.shape[1]):
+        for j in range(b.shape[0]):
+            answer[i, j] = np.sum(a1[i] * a2[:, j])
+    return answer
+
 
 # z2
 # def max_min(matrix):
