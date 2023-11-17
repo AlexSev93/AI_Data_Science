@@ -12,16 +12,16 @@ data = pd.DataFrame(data)
 print(data)
 
 #z2
-# print(data.sum())
+print(data.sum())
 
 #z3
 # print(data.shape)
 
 #z4
-print(data[2])
-print(data[4])
+# print(data[2])
+# print(data[4])
 
 #z5
-new_column = [0, 7, 14, 21]
-data[7] = new_column
-print(data)
+# new_column = [0, 7, 14, 21]
+# data[7] = new_column
+# print(data)
