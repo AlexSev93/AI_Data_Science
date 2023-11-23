@@ -2,7 +2,7 @@ import pandas as pd
 import numpy as np
 
 data = pd.read_csv('city_temperature.csv')
-print(data.head())
+# print(data.head())
 
 #z1
 # zero = data['State'].isna().sum()
@@ -18,8 +18,8 @@ print(data.head())
 # print(data['Year'].unique())
 
 #z4
-# print(data[data['Country']=='Russia'])
-# print(data[data['Country']=='Russia'].size)
+# print(data[data['Country'] == 'Russia'])
+# print(data[data['Country'] == 'Russia'].size)
 
 #z5
 # data['New_Temp'] = (data['AvgTemperature'] - 32) * 5/9
