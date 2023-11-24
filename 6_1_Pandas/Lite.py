@@ -2,6 +2,7 @@ import pandas as pd
 import numpy as np
 
 data = pd.read_csv('city_temperature.csv')
+data_copy = data.copy()
 # print(data.head())
 
 #z1
@@ -22,5 +23,5 @@ data = pd.read_csv('city_temperature.csv')
 # print(data[data['Country'] == 'Russia'].size)
 
 #z5
-# data['New_Temp'] = (data['AvgTemperature'] - 32) * 5/9
-# print(data.head())
+data['New_Temp'] = (data['AvgTemperature'] - 32) * 5/9
+print(data.head())
