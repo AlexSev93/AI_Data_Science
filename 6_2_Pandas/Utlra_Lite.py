@@ -1,7 +1,8 @@
 import pandas as pd
 
 # z1
-data = pd.read_csv('C:/Users/Admin/PycharmProjects/AI_Data_Science/6_1_Pandas/city_temperature.csv')
+data = pd.read_csv('C:/Users/Admin/PycharmProjects/'
+                   'AI_Data_Science/6_1_Pandas/city_temperature.csv')
 # print(data.Country[data.AvgTemperature > 100].nunique())
 
 # z2
