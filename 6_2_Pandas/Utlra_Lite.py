@@ -16,6 +16,7 @@ data = pd.read_csv('C:/Users/Admin/PycharmProjects/AI_Data_Science/6_1_Pandas/ci
 # print(coutries)
 
 # z5
+# data.columns = ['new_col1', 'new_col2', 'new_col3', 'new_col4'] для переименования всех
 columns_list = list(data.columns)
 translite = ['Регион', 'Страна', 'Штат',
              'Город', 'Месяц', 'День',
