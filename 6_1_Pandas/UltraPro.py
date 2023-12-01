@@ -15,7 +15,7 @@ data = pd.concat(data)
 # z2
 # print(data.head())
 # print(data.shape) #238780 строк из 10 таблиц
-# fig, ax = plt.subplots(figsize=(20, 40))
+# fig, ax = plt.subplots(figsize=(10, 20))
 # sns_heatmap = sns.heatmap(data.isnull(),
 #                           yticklabels=False, cbar=False, cmap='viridis')
 # plt.show()
@@ -30,5 +30,10 @@ data = data.dropna(axis=1, how='all')
 data = data.fillna('unknown')
 
 # z4
-data = data.groupby(['hotel', 'arrival_date_year', 'arrival_date_month'])
-print(data.lead_time.count())
+data_group = data.groupby(['hotel', 'arrival_date_year', 'arrival_date_month'])
+# print(data.lead_time.count())
+
+
+# z5
+print(data.shape)
+data.to_csv('bookings/new_data.csv')
