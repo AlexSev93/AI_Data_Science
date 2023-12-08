@@ -1,7 +1,8 @@
 import pandas as pd
 import numpy as np
 
-data = pd.read_csv('C:/Users/Admin/PycharmProjects/AI_Data_Science/6_2_Pandas/googleplaystore.csv')
+
+data = pd.read_csv('googleplaystore.csv')
 
 # z1
 # categories = list(data['Category'].unique())
@@ -19,7 +20,11 @@ data = pd.read_csv('C:/Users/Admin/PycharmProjects/AI_Data_Science/6_2_Pandas/go
 # print(f'платные-->{paid_app}, бесплатные-->{free_app}')
 
 # z4
-new_index = list(np.random.randint(0, data.shape[0], data.shape[0]))
-print(data.head())
-data.index = new_index
-print(data.head())
+# new_index = list(np.random.randint(0, data.shape[0], data.shape[0]))
+# print(data.head())
+# data.index = new_index
+# print(data.head())
+
+# z5
+# null_cell = data.isna().sum().sum()
+# print(f'пустых ячеек -- {null_cell}, {null_cell/(data.shape[0]*data.shape[1])*100}%')
