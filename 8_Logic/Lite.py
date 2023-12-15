@@ -3,15 +3,12 @@ from combinatorica import (fact, Cnm,
                            Rnm, Rnm_p)
 
 # z1
-print(fact(3))
-
-# z2
 print(3 * 3 * 2 * 1)
 
-# z3
+# z2
 print(Cnm(36, 3))
 
-# z4
+# z3
 print(23 * 22)
 
 # z1
@@ -33,3 +30,4 @@ print(a - b)
 a = {1, 6, 2, 7, 9, 3}
 b = {1, 6, 2, 7, 9, 3}
 print(a & b)
+

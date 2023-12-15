@@ -6,7 +6,7 @@ data.index = pd.to_datetime(data.InvoiceDate)
 data.drop('InvoiceDate', axis=1,  inplace=True)
 
 # z1
-# z1 = data.TotalCost.resample('1W').sum()
+# z1 = data.TotalCost.resample('W').sum()
 # print(z1)
 
 # z2

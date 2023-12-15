@@ -26,5 +26,7 @@ data = pd.read_csv('googleplaystore.csv')
 # print(data.head())
 
 # z5
-# null_cell = data.isna().sum().sum()
-# print(f'пустых ячеек -- {null_cell}, {null_cell/(data.shape[0]*data.shape[1])*100}%')
+null_cell = data.isna().sum().sum()
+print(null_cell)
+persent = round(null_cell/(data.size-null_cell)*100, 2)
+print(f'пустых ячеек -- {null_cell}, {persent}%')

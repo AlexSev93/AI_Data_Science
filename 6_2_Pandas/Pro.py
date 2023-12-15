@@ -8,7 +8,7 @@ data.drop('InvoiceDate', axis=1)
 # print(data.head())
 
 # z2
-z2 = data['2010-12-07 13:00:00':'2010-12-07 13:01:00']
+# z2 = data['2010-12-07 13:00:00':'2010-12-07 13:01:00']
 # print(z2)
 
 # z3
@@ -22,5 +22,5 @@ z2 = data['2010-12-07 13:00:00':'2010-12-07 13:01:00']
 # print(quantil)
 
 # z5
-z5 = data.CustomerID[data.index.weekday == 0].nunique()
-print(z5)
+# z5 = data.CustomerID[data.index.weekday == 0].nunique()
+# print(z5)
