@@ -69,43 +69,42 @@ from scipy.stats import uniform, norm
 # print(1 - n_arr.cdf(1))
 
 # z5
-dist_list = [] # пустой лист, куда запишется распределение с нужными параметрами
-
-#1
-mu = 0
-sigm = 4
-norm_ = norm(mu,sigm)
-dist_list.append(norm_)
-#2
-unif = uniform(loc=0,scale=5)
-dist_list.append(unif)
-#З
-mu = 161
-sigm = 4
-norm_ = norm(mu,sigm)
-dist_list.append(norm_)
-#4a
-mu = 100
-std = 12
-gaus1 = norm(mu, std)
-dist_list.append(gaus1)
-#4б
-mu = 100/7
-std /= 7
-gaus2 = norm(mu, std)
-dist_list.append(gaus2)
-
-
-def dist_moments(dist_):
-  mean, var,_,_ = dist_.stats(moments='mvsk')
-  print("Среднее: {}".format(mean))
-  print("Вариация: {}".format(var))
-  print("Квантиль 0.25: {}".format(dist_.ppf(0.25)))
-  print("Квантиль 0.9: {}".format(dist_.ppf(0.9)))
+# dist_list = []
+# 1
+# mu = 0
+# sigm = 4
+# norm_ = norm(mu, sigm)
+# dist_list.append(norm_)
+# 2
+# unif = uniform(loc=0, scale=5)
+# dist_list.append(unif)
+# З
+# mu = 161
+# sigm = 4
+# norm_ = norm(mu, sigm)
+# dist_list.append(norm_)
+# 4a
+# mu = 100
+# std = 12
+# gaus1 = norm(mu, std)
+# dist_list.append(gaus1)
+# 4б
+# mu = 100 / 7
+# std /= 7
+# gaus2 = norm(mu, std)
+# dist_list.append(gaus2)
+#
+#
+# def dist_moments(dist_):
+#     mean, var = dist_.stats(moments='mv')
+#     print("Среднее: {}".format(mean))
+#     print("Вариация: {}".format(var))
+#     print("Квантиль 0.25: {}".format(dist_.ppf(0.25)))
+#     print("Квантиль 0.9: {}".format(dist_.ppf(0.9)))
 
 
 # Теперь проходимся циклом по всем распределениям
-for i,d in enumerate(dist_list):
-  print(f'Для Задачи: {i+1}')
-  dist_moments(d)
-  print('-'*20)
+# for i, d in enumerate(dist_list):
+#     print(f'Для Задачи: {i + 1}')
+#     dist_moments(d)
+#     print('-' * 20)
