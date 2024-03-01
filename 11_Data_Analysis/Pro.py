@@ -25,3 +25,4 @@ for i in range(area.shape[0]):
         n = 'Нет'
     area_new.append(n)
 data['Площадь'] = area_new
+
